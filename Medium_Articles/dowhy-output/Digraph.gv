@@ -1,0 +1,11 @@
+digraph {
+	cluster [label=cluster]
+	streaming_pre [label=streaming_pre]
+	is_treatment [label=is_treatment]
+	streaming_post [label=streaming_post]
+	cluster -> streaming_post
+	cluster -> is_treatment
+	streaming_pre -> streaming_post
+	streaming_pre -> is_treatment
+	is_treatment -> streaming_post
+}
